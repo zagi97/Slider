@@ -1,0 +1,131 @@
+$blue: #0a31ad
+
+body 
+    margin: 0
+    overflow: hidden
+    
+.grid-container
+    display: grid
+    width: 941px
+    height: 730px
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(100px, auto)
+    grid-gap: 20px
+    max-width: 1170px
+    margin: 0 auto
+    grid-template-areas: "header header header header header header header header header header header header" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer"
+    header
+        grid-area: header
+        display: grid
+        height: 100px 
+        width: 971px
+        div.HeaderEmpty
+            grid-column: 1/span 4
+            background-color: #DDDDDD
+            height: 100px
+            width: 301px
+            border-radius: 0 0 5px 5px
+        div.HeaderText
+            grid-column: 5/span 8
+            background-color: #DDDDDD
+            color: white
+            height: 100px
+            width: 621px
+            border-radius: 0 0 5px 5px
+            font-family: "Helvetica Neue"
+            font-size: 15px
+            font-weight: bold
+            p
+                margin: 35px 90px
+    main
+        grid-area: main
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(1px, 1fr))
+        .WholeSlider
+            grid-column: 1/span 8
+            position: relative
+            white-space: nowrap  
+            margin-top: 30px          
+            .FirstRow
+                position: relative
+                right: 1200px
+                height: 210px
+                //width: 1230px
+                img
+                    height: 200px
+                    border-radius: 7px
+                    display: inline-block
+                    margin: 0 2px 0 2px
+            .SecondRow
+                position: relative
+                right: 1340px
+                img
+                    height: 200px
+                    border-radius: 7px
+                    display: inline-block
+                    margin: 0 2px 0 2px
+            .Arrows
+                border-radius: 7px
+                //position: absolute
+                //right: 75px
+                //top: 210px
+                .ArrowBlueLeft
+                    height: 40px
+                    width: 30px
+                    border: 1px solid #134880
+                    border-radius: 5px
+                    right: 19px
+                    top: 210px
+                    position: absolute
+                .ArrowGrayLeft:hover
+                    
+                .ArrowBlueRight
+                    height: 40px
+                    width: 30px
+                    border: 1px solid #134880
+                    border-radius: 5px
+                    right: 19px
+                    top: 260px
+                    position: absolute
+                .ArrowBlueRight:hover
+
+
+        content
+            grid-column: 9/span 4
+            .Text
+                height: 296px
+                width: 301px
+                text-align: left
+                h3
+                    color: #134880
+                    height: 120px
+                    width: 292px
+                    font-family: "Source Sans Pro";
+                    font-size: 32px
+                    font-weight: bold//KOLIKO CE TAMNA BITI SLOVA
+                    letter-spacing: -0.2px//RAZMAK IZMEDU SLOVA
+                    line-height: 40px //RAZMAK IZMEDU REDOVA
+                .Paragraph
+                    height: 156px
+                    width: 290PX                    
+                    font-size: 18PX
+                    font-family: "Source Sans Pro";
+                    letter-spacing: -0.2px
+                    line-height: 26px
+    footer
+        grid-column: 1/12
+        grid-area: footer
+        display: grid
+        background-color: #DDDDDD
+        height: 100px  
+        width: 941px
+        border-radius: 0 0 5px 5px
+        .FooterText
+            padding: 40px
+            height: 18px  
+            width: 245px   
+            color: white
+            font-family: "Helvetica Neue" 
+            font-size: 15px  
+            font-weight: bold 
+            line-height: 18px

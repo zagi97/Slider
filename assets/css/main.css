@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  overflow: hidden; }
+
+.grid-container {
+  display: grid;
+  width: 941px;
+  height: 730px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  max-width: 1170px;
+  margin: 0 auto;
+  grid-template-areas: "header header header header header header header header header header header header" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer"; }
+  .grid-container header {
+    grid-area: header;
+    display: grid;
+    height: 100px;
+    width: 971px; }
+    .grid-container header div.HeaderEmpty {
+      grid-column: 1/span 4;
+      background-color: #DDDDDD;
+      height: 100px;
+      width: 301px;
+      border-radius: 0 0 5px 5px; }
+    .grid-container header div.HeaderText {
+      grid-column: 5/span 8;
+      background-color: #DDDDDD;
+      color: white;
+      height: 100px;
+      width: 621px;
+      border-radius: 0 0 5px 5px;
+      font-family: "Helvetica Neue";
+      font-size: 15px;
+      font-weight: bold; }
+      .grid-container header div.HeaderText p {
+        margin: 35px 90px; }
+  .grid-container main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr)); }
+    .grid-container main .WholeSlider {
+      grid-column: 1/span 8;
+      position: relative;
+      white-space: nowrap;
+      margin-top: 30px; }
+      .grid-container main .WholeSlider .FirstRow {
+        position: relative;
+        right: 1200px;
+        height: 210px; }
+        .grid-container main .WholeSlider .FirstRow img {
+          height: 200px;
+          border-radius: 7px;
+          display: inline-block;
+          margin: 0 2px 0 2px; }
+      .grid-container main .WholeSlider .SecondRow {
+        position: relative;
+        right: 1340px; }
+        .grid-container main .WholeSlider .SecondRow img {
+          height: 200px;
+          border-radius: 7px;
+          display: inline-block;
+          margin: 0 2px 0 2px; }
+      .grid-container main .WholeSlider .Arrows {
+        border-radius: 7px; }
+        .grid-container main .WholeSlider .Arrows .ArrowBlueLeft {
+          height: 40px;
+          width: 30px;
+          border: 1px solid #134880;
+          border-radius: 5px;
+          right: 19px;
+          top: 210px;
+          position: absolute; }
+        .grid-container main .WholeSlider .Arrows .ArrowBlueRight {
+          height: 40px;
+          width: 30px;
+          border: 1px solid #134880;
+          border-radius: 5px;
+          right: 19px;
+          top: 260px;
+          position: absolute; }
+    .grid-container main content {
+      grid-column: 9/span 4; }
+      .grid-container main content .Text {
+        height: 296px;
+        width: 301px;
+        text-align: left; }
+        .grid-container main content .Text h3 {
+          color: #134880;
+          height: 120px;
+          width: 292px;
+          font-family: "Source Sans Pro";
+          font-size: 32px;
+          font-weight: bold;
+          letter-spacing: -0.2px;
+          line-height: 40px; }
+        .grid-container main content .Text .Paragraph {
+          height: 156px;
+          width: 290PX;
+          font-size: 18PX;
+          font-family: "Source Sans Pro";
+          letter-spacing: -0.2px;
+          line-height: 26px; }
+  .grid-container footer {
+    grid-column: 1/12;
+    grid-area: footer;
+    display: grid;
+    background-color: #DDDDDD;
+    height: 100px;
+    width: 941px;
+    border-radius: 0 0 5px 5px; }
+    .grid-container footer .FooterText {
+      padding: 40px;
+      height: 18px;
+      width: 245px;
+      color: white;
+      font-family: "Helvetica Neue";
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px; }
