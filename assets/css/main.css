@@ -64,21 +64,45 @@ body {
       .grid-container main .WholeSlider .Arrows {
         border-radius: 7px; }
         .grid-container main .WholeSlider .Arrows .ArrowBlueLeft {
-          height: 40px;
-          width: 30px;
+          height: 60px;
+          width: 60px;
           border: 1px solid #134880;
           border-radius: 5px;
           right: 19px;
           top: 210px;
           position: absolute; }
+        .grid-container main .WholeSlider .Arrows .ArrowGrayLeft {
+          height: 60px;
+          width: 60px;
+          right: 19px;
+          top: 210px;
+          position: absolute; }
+          .grid-container main .WholeSlider .Arrows .ArrowGrayLeft:hover {
+            background-image: url(../../img/arrow-gray-left.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px; }
         .grid-container main .WholeSlider .Arrows .ArrowBlueRight {
-          height: 40px;
-          width: 30px;
+          height: 60px;
+          width: 60px;
           border: 1px solid #134880;
           border-radius: 5px;
           right: 19px;
-          top: 260px;
+          top: 280px;
           position: absolute; }
+        .grid-container main .WholeSlider .Arrows .ArrowGrayRight {
+          height: 60px;
+          width: 60px;
+          right: 19px;
+          top: 280px;
+          position: absolute; }
+          .grid-container main .WholeSlider .Arrows .ArrowGrayRight:hover {
+            background-image: url(../../img/arrow-gray-right.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px; }
     .grid-container main content {
       grid-column: 9/span 4; }
       .grid-container main content .Text {
