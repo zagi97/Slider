@@ -7,7 +7,7 @@ function MoveSliderLeft()
   console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:first");
   console.log(SecondRowImg);
-	var FirstRowImgWidth = FirstRowImg.width();
+  var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
   FirstRowImg.detach().appendTo(".FirstRow");	
   SecondRowImg.detach().appendTo(".SecondRow");
@@ -25,8 +25,6 @@ function MoveSliderRight()
   FirstRowImg.detach().prependTo(".FirstRow");  
   SecondRowImg.detach().prependTo(".SecondRow");
 }
-
-
 
 $('.ArrowGrayLeft').on('click', function()
 {
