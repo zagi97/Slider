@@ -11,7 +11,6 @@ function MoveSliderLeft()
   var SecondRowImgWidth =SecondRowImg.width();
   FirstRowImg.detach().appendTo(".FirstRow");	
   SecondRowImg.detach().appendTo(".SecondRow");
-
 }
 
 function MoveSliderRight()
@@ -35,7 +34,6 @@ $('.ArrowGrayRight').on('click', function()
 {
     MoveSliderRight();
 });
-
 /*
 function getElementIndex() 
 {
