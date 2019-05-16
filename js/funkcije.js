@@ -1,29 +1,45 @@
-var Slike = $("img");
-console.log(Slike);
+var Images = $("img");
+console.log(Images);
 
-
-var KolicinaSlika = Slike.length;
-console.log(KolicinaSlika);
-
-var imgWidth = Slike.width();
-console.log(imgWidth);
-console.log(Slike[0])
-
-var itemToMove = Slike.children().last();
-console.log(itemToMove);
-
-function PomakniSliderUdesno()
+function MoveSliderLeft()
 {
-	Slike.clone().appendTo("img");
-	var imgWidth = Slike.width();	
-	Slike.animate({left: -imgWidth});
+  var FirstRowImg = $(".FirstRow img:first");
+  console.log(FirstRowImg);
+  var SecondRowImg = $(".SecondRow img:first");
+  console.log(SecondRowImg);
+
+	var FirstRowImgWidth = FirstRowImg.width();
+  var SecondRowImgWidth =SecondRowImg.width();
+
+  FirstRowImg.detach().appendTo(".FirstRow");	
+  SecondRowImg.detach().appendTo(".SecondRow");
+
+}
+
+function MoveSliderRight()
+{
+  var FirstRowImg = $(".FirstRow img:last");  
+  console.log(FirstRowImg);
+  var SecondRowImg = $(".SecondRow img:last");
+  console.log(SecondRowImg);
+
+  var FirstRowImgWidth = FirstRowImg.width();
+  var SecondRowImgWidth =SecondRowImg.width();
+
+  FirstRowImg.detach().prependTo(".FirstRow");  
+  SecondRowImg.detach().prependTo(".SecondRow");
 }
 
 
 
-$('.ArrowBlueRight').on('click', function()
+$('.ArrowGrayLeft').on('click', function()
 {
-	    PomakniSliderUdesno();
+	    MoveSliderLeft();
+});
+
+$('.ArrowGrayRight').on('click', function()
+{
+      MoveSliderRight();
 });
 
 /*
@@ -43,3 +59,6 @@ function getElementIndex()
 }
 console.log(getElementIndex());
 */
+/*
+
+*/    
