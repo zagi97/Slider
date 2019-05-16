@@ -7,10 +7,8 @@ function MoveSliderLeft()
   console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:first");
   console.log(SecondRowImg);
-
 	var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
-
   FirstRowImg.detach().appendTo(".FirstRow");	
   SecondRowImg.detach().appendTo(".SecondRow");
 
@@ -22,10 +20,8 @@ function MoveSliderRight()
   console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:last");
   console.log(SecondRowImg);
-
   var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
-
   FirstRowImg.detach().prependTo(".FirstRow");  
   SecondRowImg.detach().prependTo(".SecondRow");
 }
@@ -34,12 +30,12 @@ function MoveSliderRight()
 
 $('.ArrowGrayLeft').on('click', function()
 {
-	    MoveSliderLeft();
+    MoveSliderLeft();
 });
 
 $('.ArrowGrayRight').on('click', function()
 {
-      MoveSliderRight();
+    MoveSliderRight();
 });
 
 /*
