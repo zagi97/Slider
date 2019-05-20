@@ -47,7 +47,7 @@ body {
       .grid-container main .WholeSlider .FirstRow {
         position: relative;
         right: 1200px;
-        height: 210px; }
+        width: 999%; }
         .grid-container main .WholeSlider .FirstRow img {
           height: 200px;
           border-radius: 7px;
@@ -55,7 +55,8 @@ body {
           margin: 0 2px 0 2px; }
       .grid-container main .WholeSlider .SecondRow {
         position: relative;
-        right: 1340px; }
+        right: 1340px;
+        width: 999%; }
         .grid-container main .WholeSlider .SecondRow img {
           height: 200px;
           border-radius: 7px;
@@ -68,14 +69,14 @@ body {
           width: 60px;
           border: 1px solid #134880;
           border-radius: 5px;
-          right: 19px;
-          top: 210px;
+          left: 517px;
+          top: 206px;
           position: absolute; }
         .grid-container main .WholeSlider .Arrows .ArrowGrayLeft {
           height: 60px;
           width: 60px;
-          right: 19px;
-          top: 210px;
+          left: 517px;
+          top: 206px;
           position: absolute; }
           .grid-container main .WholeSlider .Arrows .ArrowGrayLeft:hover {
             background-image: url(../../img/arrow-gray-left.png);
@@ -88,13 +89,13 @@ body {
           width: 60px;
           border: 1px solid #134880;
           border-radius: 5px;
-          right: 19px;
+          left: 517px;
           top: 280px;
           position: absolute; }
         .grid-container main .WholeSlider .Arrows .ArrowGrayRight {
           height: 60px;
           width: 60px;
-          right: 19px;
+          left: 517px;
           top: 280px;
           position: absolute; }
           .grid-container main .WholeSlider .Arrows .ArrowGrayRight:hover {
@@ -120,8 +121,8 @@ body {
           line-height: 40px; }
         .grid-container main content .Text .Paragraph {
           height: 156px;
-          width: 290PX;
-          font-size: 18PX;
+          width: 290px;
+          font-size: 18px;
           font-family: "Source Sans Pro";
           letter-spacing: -0.2px;
           line-height: 26px; }

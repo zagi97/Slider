@@ -4,25 +4,66 @@ console.log(Images);
 function MoveSliderLeft()
 {
   var FirstRowImg = $(".FirstRow img:first");
-  console.log(FirstRowImg);
+  //console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:first");
-  console.log(SecondRowImg);
+  //console.log(SecondRowImg);
   var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
-  FirstRowImg.detach().appendTo(".FirstRow");	
-  SecondRowImg.detach().appendTo(".SecondRow");
+  FirstRowImg.appendTo(".FirstRow");	
+  SecondRowImg.appendTo(".SecondRow");
+
+  FirstRowImg.css({
+    position: "relative",
+    right: FirstRowImgWidth
+  }).animate({
+    right: 0}, 1000);
+
+  SecondRowImg.css({
+    position: "relative",
+    right: SecondRowImgWidth
+  }).animate({
+    right: 0}, 1000);
+  /*FirstRowImg.animate({
+    position: "relative",
+    right : 0
+  }, 100);   */
+
+/*SecondRowImg.css({
+    position: "relative",
+    right: SecondRowImgWidth
+  }).stop(true).animate(
+    {
+      right: 0
+    }, 100
+  );
+  SecondRowImg.animate({
+    left: SecondRowImgWidth,
+    height: 'toggle'
+  }, "slow");*/
 }
 
 function MoveSliderRight()
 {
-  var FirstRowImg = $(".FirstRow img:last");  
-  console.log(FirstRowImg);
+  var FirstRowImg = $(".FirstRow img:last");
+  //console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:last");
-  console.log(SecondRowImg);
+  //console.log(SecondRowImg);
   var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
-  FirstRowImg.detach().prependTo(".FirstRow");  
+  FirstRowImg.detach().prependTo(".FirstRow");
   SecondRowImg.detach().prependTo(".SecondRow");
+
+  FirstRowImg.css({
+    position: "relative",
+    right: FirstRowImgWidth
+  }).animate({
+    right: 0}, 3000);
+
+  SecondRowImg.css({
+    position: "relative",
+    right: SecondRowImgWidth
+  }).animate({
+    right: 0}, 3000);
 }
 
 $('.ArrowGrayLeft').on('click', function()
@@ -34,23 +75,3 @@ $('.ArrowGrayRight').on('click', function()
 {
     MoveSliderRight();
 });
-/*
-function getElementIndex() 
-{
-    var index = 0;
-   	if(index < Slike.length-1)
-   	{
-   		index = index + 1;
-   		console.log(index);
-   	}
-   	else
-   	{
-   		index = 0;
-   	}
-    return index;
-}
-console.log(getElementIndex());
-*/
-/*
-
-*/    
