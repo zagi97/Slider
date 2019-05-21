@@ -43,27 +43,30 @@ body {
       grid-column: 1/span 8;
       position: relative;
       white-space: nowrap;
-      margin-top: 30px; }
+      margin-top: 30px;
+      bottom: 65px; }
       .grid-container main .WholeSlider .FirstRow {
-        position: relative;
-        right: 1200px;
-        width: 999%; }
+        position: absolute;
+        right: 47px;
+        overflow: hidden; }
         .grid-container main .WholeSlider .FirstRow img {
           height: 200px;
           border-radius: 7px;
           display: inline-block;
           margin: 0 2px 0 2px; }
       .grid-container main .WholeSlider .SecondRow {
-        position: relative;
-        right: 1340px;
-        width: 999%; }
+        position: absolute;
+        right: 187px;
+        top: 205px;
+        overflow: hidden; }
         .grid-container main .WholeSlider .SecondRow img {
           height: 200px;
           border-radius: 7px;
           display: inline-block;
           margin: 0 2px 0 2px; }
       .grid-container main .WholeSlider .Arrows {
-        border-radius: 7px; }
+        border-radius: 7px;
+        cursor: pointer; }
         .grid-container main .WholeSlider .Arrows .ArrowBlueLeft {
           height: 60px;
           width: 60px;

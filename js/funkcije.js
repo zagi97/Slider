@@ -14,28 +14,21 @@ function MoveSliderLeft()
 
   FirstRowImg.css({
     position: "relative",
-    right: FirstRowImgWidth
+    left: FirstRowImgWidth,
   }).animate({
-    right: 0}, 1000);
+    left: 0}, "slow");
 
   SecondRowImg.css({
     position: "relative",
-    right: SecondRowImgWidth
+    left: SecondRowImgWidth
   }).animate({
-    right: 0}, 1000);
+    left: 0}, "slow");
   /*FirstRowImg.animate({
     position: "relative",
     right : 0
   }, 100);   */
 
-/*SecondRowImg.css({
-    position: "relative",
-    right: SecondRowImgWidth
-  }).stop(true).animate(
-    {
-      right: 0
-    }, 100
-  );
+/*
   SecondRowImg.animate({
     left: SecondRowImgWidth,
     height: 'toggle'
@@ -55,15 +48,15 @@ function MoveSliderRight()
 
   FirstRowImg.css({
     position: "relative",
-    right: FirstRowImgWidth
+    left: FirstRowImgWidth
   }).animate({
-    right: 0}, 3000);
+    left: 0}, "slow");
 
   SecondRowImg.css({
     position: "relative",
-    right: SecondRowImgWidth
+    left: SecondRowImgWidth
   }).animate({
-    right: 0}, 3000);
+    left: 0}, "slow");
 }
 
 $('.ArrowGrayLeft').on('click', function()
