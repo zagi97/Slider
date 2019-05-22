@@ -14,25 +14,15 @@ function MoveSliderLeft()
 
   FirstRowImg.css({
     position: "relative",
-    left: FirstRowImgWidth,
+    right: -FirstRowImgWidth
   }).animate({
-    left: 0}, "slow");
+    right: 0}, "slow");
 
   SecondRowImg.css({
     position: "relative",
-    left: SecondRowImgWidth
+    right: -SecondRowImgWidth
   }).animate({
-    left: 0}, "slow");
-  /*FirstRowImg.animate({
-    position: "relative",
-    right : 0
-  }, 100);   */
-
-/*
-  SecondRowImg.animate({
-    left: SecondRowImgWidth,
-    height: 'toggle'
-  }, "slow");*/
+    right: 0}, "slow");
 }
 
 function MoveSliderRight()
@@ -43,20 +33,20 @@ function MoveSliderRight()
   //console.log(SecondRowImg);
   var FirstRowImgWidth = FirstRowImg.width();
   var SecondRowImgWidth =SecondRowImg.width();
-  FirstRowImg.detach().prependTo(".FirstRow");
-  SecondRowImg.detach().prependTo(".SecondRow");
+  FirstRowImg.prependTo(".FirstRow");
+  SecondRowImg.prependTo(".SecondRow");
 
   FirstRowImg.css({
     position: "relative",
-    left: FirstRowImgWidth
+    right: FirstRowImgWidth
   }).animate({
-    left: 0}, "slow");
+    right: 0}, 800);
 
   SecondRowImg.css({
     position: "relative",
-    left: SecondRowImgWidth
+    right: SecondRowImgWidth
   }).animate({
-    left: 0}, "slow");
+    right: 0}, 800);
 }
 
 $('.ArrowGrayLeft').on('click', function()
