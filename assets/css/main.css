@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  overflow: hidden; }
+  margin: 0; }
 
 .grid-container {
   display: grid;
@@ -58,7 +57,7 @@ body {
       .grid-container main .WholeSlider .SecondRow {
         position: absolute;
         right: 144px;
-        top: 205px;
+        top: 210px;
         overflow: hidden; }
         .grid-container main .WholeSlider .SecondRow img {
           height: 200px;
@@ -74,13 +73,13 @@ body {
           border: 1px solid #134880;
           border-radius: 5px;
           left: 560px;
-          top: 206px;
+          top: 210px;
           position: absolute; }
         .grid-container main .WholeSlider .Arrows .ArrowGrayLeft {
           height: 60px;
           width: 59px;
           left: 560px;
-          top: 206px;
+          top: 210px;
           position: absolute; }
           .grid-container main .WholeSlider .Arrows .ArrowGrayLeft:hover {
             background-image: url(../../img/arrow-gray-left.png);
@@ -118,7 +117,7 @@ body {
         left: 13px; }
         .grid-container main content .Text h3 {
           color: #134880;
-          height: 100px;
+          height: 110px;
           width: 292px;
           font-family: "Source Sans Pro";
           font-size: 32px;
@@ -131,7 +130,8 @@ body {
           font-size: 18px;
           font-family: "Source Sans Pro";
           letter-spacing: -0.2px;
-          line-height: 26px; }
+          line-height: 26px;
+          color: #484A4C; }
   .grid-container footer {
     grid-column: 1/12;
     grid-area: footer;

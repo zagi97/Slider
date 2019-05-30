@@ -7,22 +7,43 @@ function MoveSliderLeft()
   //console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:first");
   //console.log(SecondRowImg);
+  var FirstRowImages = $(".FirstRow img");
+  var SecondRowImages = $(".SecondRow img");
+
   var FirstRowImgWidth = FirstRowImg.width();
-  var SecondRowImgWidth =SecondRowImg.width();
-  FirstRowImg.appendTo(".FirstRow");	
+  var SecondRowImgWidth = SecondRowImg.width();
+
+  FirstRowImg.appendTo(".FirstRow");
   SecondRowImg.appendTo(".SecondRow");
 
   FirstRowImg.css({
     position: "relative",
     right: -FirstRowImgWidth
-  }).animate({
-    right: 0}, "slow");
+  }).animate(
+  {
+    right: 0
+  }, 80);
 
   SecondRowImg.css({
     position: "relative",
+    right: -SecondRowImgWidth,
+  }).animate({
+    right: 0
+  }, 80);
+
+  FirstRowImages.css({
+    position: "relative",
+    right: -FirstRowImgWidth
+  }).animate({
+    right: 0
+  },80);
+
+  SecondRowImages.css({
+    position: "relative",
     right: -SecondRowImgWidth
   }).animate({
-    right: 0}, "slow");
+    right: 0
+  },80);
 }
 
 function MoveSliderRight()
@@ -31,8 +52,12 @@ function MoveSliderRight()
   //console.log(FirstRowImg);
   var SecondRowImg = $(".SecondRow img:last");
   //console.log(SecondRowImg);
+  var FirstRowImages = $(".FirstRow img");
+  var SecondRowImages = $(".SecondRow img");
+
   var FirstRowImgWidth = FirstRowImg.width();
-  var SecondRowImgWidth =SecondRowImg.width();
+  var SecondRowImgWidth = SecondRowImg.width();
+
   FirstRowImg.prependTo(".FirstRow");
   SecondRowImg.prependTo(".SecondRow");
 
@@ -40,13 +65,29 @@ function MoveSliderRight()
     position: "relative",
     right: FirstRowImgWidth
   }).animate({
-    right: 0}, 800);
+    right: 0
+  }, 80);
 
   SecondRowImg.css({
     position: "relative",
     right: SecondRowImgWidth
   }).animate({
-    right: 0}, 800);
+    right: 0
+  }, 80);
+
+  FirstRowImages.css({
+    position: "relative",
+    right: FirstRowImgWidth
+  }).animate({
+    right: 0
+  },80);
+
+  SecondRowImages.css({
+    position: "relative",
+    right: SecondRowImgWidth
+  }).animate({
+    right: 0
+  },80);
 }
 
 $('.ArrowGrayLeft').on('click', function()
@@ -57,4 +98,14 @@ $('.ArrowGrayLeft').on('click', function()
 $('.ArrowGrayRight').on('click', function()
 {
     MoveSliderRight();
+});
+
+$('.WholeSlider').on( "swipeleft", function() 
+{ 
+    MoveSliderLeft();
+});
+
+$('.WholeSlider').on( "swiperight", function() 
+{ 
+   MoveSliderRight();
 });
